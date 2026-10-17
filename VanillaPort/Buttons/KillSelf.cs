@@ -1,13 +1,12 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Roles.Impostor;
-using MiraAPI.Hud;
+﻿using MiraAPI.Hud;
 using MiraAPI.Keybinds;
 using MiraAPI.Networking;
-using MiraAPI.Roles;
 using MiraAPI.Utilities.Assets;
 using UnityEngine;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Impostor;
 
-namespace AU3DPort.VanillaPort.Buttons
+namespace vRoles.VanillaPort.Buttons
 {
     public class KillSelf : CustomActionButton
     {

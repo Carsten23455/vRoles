@@ -1,18 +1,16 @@
-﻿using AU3DPort.VanillaPort.Assets;
+﻿using vRoles.VanillaPort.Options;
 using MiraAPI.GameEnd;
+using MiraAPI.GameModes;
 using MiraAPI.GameOptions;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
-using System.Collections.Generic;
-using System.Linq;
-using AU3DPort.VanillaPort.GameEnd;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Options;
-using MiraAPI.GameModes;
 using UnityEngine;
+using vRoles.VanillaPort.Events;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Roles.Crewmate
+namespace vRoles.VanillaPort.Roles.Crewmate
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class CriticalCrewmate : CrewmateRole, ICustomRole
@@ -32,7 +30,7 @@ namespace AU3DPort.VanillaPort.Roles.Crewmate
             MaxRoleCount = 3,
             IntroSound = AssetManager.ScannerRoleReveal,
             Icon = AssetManager.CriticalCrewmateIcon,
-            HideSettings = OptionGroupSingleton<CriticalCargo>.Instance.Enabled
+            HideSettings = !OptionGroupSingleton<CriticalCargo>.Instance.Enabled
         };
 
         public override void OnDeath(DeathReason reason)

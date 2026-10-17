@@ -1,8 +1,9 @@
-﻿using AU3DPort;
-using AU3DPort.VanillaPort.Assets;
-using PowerTools;
+﻿using PowerTools;
 using Reactor.Utilities.Extensions;
 using UnityEngine;
+using vRoles.VanillaPort.Resources;
+
+namespace vRoles.VanillaPort.Managers;
 
 public class CustomScanAnimationManager
 {

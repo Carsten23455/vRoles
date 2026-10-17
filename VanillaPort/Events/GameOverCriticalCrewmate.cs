@@ -1,14 +1,8 @@
-﻿using AmongUs.GameOptions;
-using MiraAPI.GameEnd;
+﻿using MiraAPI.GameEnd;
 using MiraAPI.Utilities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-namespace AU3DPort.VanillaPort.GameEnd
+namespace vRoles.VanillaPort.Events
 {
     internal class GameOverCriticalCrewmate : CustomGameOver
     {

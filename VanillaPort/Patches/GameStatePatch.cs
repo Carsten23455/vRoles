@@ -1,26 +1,9 @@
-﻿using AchievementsAPI.API;
-using AU3DPort.VanillaPort.Achievements;
-using AU3DPort.VanillaPort.Buttons;
-using AU3DPort.VanillaPort.Buttons.InfectionPowers.OriginalPowers;
-using AU3DPort.VanillaPort.Managers;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Roles.Impostor;
-using HarmonyLib;
-using MiraAPI.GameOptions;
+﻿using HarmonyLib;
 using MiraAPI.Hud;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using MiraAPI.Events;
-using MiraAPI.Events.Vanilla.Gameplay;
-using MiraAPI.GameEnd;
-using MiraAPI.GameModes;
-using UnityEngine;
+using vRoles.VanillaPort.Buttons;
+using vRoles.VanillaPort.Managers;
 
-namespace AU3DPort.VanillaPort.Patches
+namespace vRoles.VanillaPort.Patches
 {
     [HarmonyPatch(typeof(ShipStatus), nameof(ShipStatus.FixedUpdate))]
     public static class ShipStatusUpdatePatch
@@ -58,10 +41,6 @@ namespace AU3DPort.VanillaPort.Patches
                 ContainmentManager.SabotageCooldown = 35;
             }
             */
-            if (CustomGameModeManager.ActiveMode is TagGamemode && AmongUsClient.Instance.AmClient && !AchievementsTabSingleton<AU3DTag>.Instance.freeloader.Unlocked && AchievementHandler.CanUnlockFreeloader)
-            {
-                AchievementsTabSingleton<AU3DTag>.Instance.freeloader.Unlock();
-            }
         }
     }
 }

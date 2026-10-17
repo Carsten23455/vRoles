@@ -1,20 +1,13 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.GameEnd;
-using MiraAPI.GameEnd;
+﻿using vRoles.VanillaPort.Options;
+using vRoles.VanillaPort.Options.RoleOptions;
+using MiraAPI.GameModes;
 using MiraAPI.GameOptions;
 using MiraAPI.Roles;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Options.RoleOptions;
-using MiraAPI.GameModes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Roles.Crewmate
+namespace vRoles.VanillaPort.Roles.Crewmate
 {
     public class Scanner : CrewmateRole, ICustomRole
     {
@@ -31,10 +24,9 @@ namespace AU3DPort.VanillaPort.Roles.Crewmate
         public CustomRoleConfiguration Configuration => new CustomRoleConfiguration(this)
         {
             UseVanillaKillButton = false,
-            DefaultChance = 50,
-            DefaultRoleCount = 0,
+            MaxRoleCount = 1,
             IntroSound = AssetManager.ScannerRoleReveal,
-            HideSettings = !OptionGroupSingleton<CriticalCargo>.Instance.Enabled,
+            HideSettings = OptionGroupSingleton<CriticalCargo>.Instance.Enabled,
             Icon = AssetManager.CriticalCrewmateIcon,
         };
         

@@ -1,28 +1,22 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using MiraAPI.GameOptions;
+﻿using MiraAPI.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Keybinds;
-using MiraAPI.Modifiers;
 using MiraAPI.Networking;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Options.RoleOptions;
-using AU3DPort.VanillaPort.Roles.Crewmate;
 using UnityEngine;
+using vRoles.VanillaPort.Options.RoleOptions;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Crewmate;
 
-namespace AU3DPort.VanillaPort.Buttons
+namespace vRoles.VanillaPort.Buttons
 {
     public class VigiKill : CustomActionButton<PlayerControl>
     {
         public override string Name => "Kill";
         public override float Cooldown => vigisettings.KillCoolDown;
         public override float EffectDuration => 0f;
-        public override int MaxUses => vigisettings.InfiniteKills ? 0 : 1;
+        public override int MaxUses => (int)vigisettings.InfiniteKills;
         public override LoadableAsset<Sprite> Sprite => AssetManager.VigiKillIcon;
         public override BaseKeybind? Keybind => MiraGlobalKeybinds.PrimaryAbility;
         VigilanteSettings vigisettings = OptionGroupSingleton<VigilanteSettings>.Instance;

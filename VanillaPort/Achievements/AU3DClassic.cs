@@ -1,4 +1,5 @@
-﻿using AchievementsAPI.API;
+﻿/*
+using AchievementsAPI.API;
 using AU3DPort.VanillaPort.Assets;
 using AU3DPort.VanillaPort.Buttons;
 using AU3DPort.VanillaPort.Roles.Impostor;
@@ -30,6 +31,8 @@ namespace AU3DPort.VanillaPort.Achievements
         //public BaseAchievement OnlyOne { get; set; } = new BaseAchievement("There can only be one...", "eject another impostor as an impostor deputy", "AU3DPort.VanillaPort.Assets.Sprites.Buttons.DeputyIcon.png");
         //public BaseAchievement BestSheriff { get; set; } = new BaseAchievement("Best sheriff in the west", "eject 5 impostors as a crewmate deputy", "AU3DPort.VanillaPort.Assets.Sprites.Buttons.DeputyIcon.png");
         public BaseAchievement Reprotected { get; set; } = new BaseAchievement("Reprotected", "protect a crewmate from the same killer twice", AssetManager.GuardPink.LoadAsset());
-
+        
     }
 }
+
+*/

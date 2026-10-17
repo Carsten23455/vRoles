@@ -1,15 +1,10 @@
-﻿using AU3DPort.VanillaPort.Assets;
+﻿using vRoles.VanillaPort.Resources;
 using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Buttons;
-using AU3DPort.VanillaPort.Managers;
 using UnityEngine;
+using vRoles.VanillaPort.Buttons;
+using vRoles.VanillaPort.Managers;
 
-namespace AU3DPort.VanillaPort.Patches.Meeting
+namespace vRoles.VanillaPort.Patches.Meeting
 {
 
     [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.Start))]

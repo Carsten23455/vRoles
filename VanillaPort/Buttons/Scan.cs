@@ -1,19 +1,15 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Options.RoleOptions;
-using MiraAPI.GameOptions;
+﻿using MiraAPI.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Keybinds;
-using MiraAPI.Roles;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
-using System.Collections.Generic;
-using AU3DPort.VanillaPort.Managers;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Roles.Crewmate;
 using UnityEngine;
-using xCloud;
+using vRoles.VanillaPort.Managers;
+using vRoles.VanillaPort.Options.RoleOptions;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Crewmate;
 
-namespace AU3DPort.VanillaPort.Buttons
+namespace vRoles.VanillaPort.Buttons
 {
     public enum ScanResult
     {

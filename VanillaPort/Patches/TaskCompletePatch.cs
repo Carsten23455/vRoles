@@ -1,21 +1,15 @@
-﻿using AchievementsAPI.API;
-using AU3DPort.VanillaPort.Achievements;
-using AU3DPort.VanillaPort.Buttons;
-using AU3DPort.VanillaPort.Buttons.InfectionPowers.OriginalPowers;
-using AU3DPort.VanillaPort.Buttons.InfectionPowers.UnUsedPowers;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Roles.Crewmate;
-using AU3DPort.VanillaPort.Roles.Infection.Crewmate;
+﻿using vRoles.VanillaPort.Options;
+using vRoles.VanillaPort.Roles.Crewmate;
+using vRoles.VanillaPort.Roles.Infection.Crewmate;
 using HarmonyLib;
-using MiraAPI.GameModes;
 using MiraAPI.GameOptions;
 using MiraAPI.Hud;
-using MiraAPI.Modifiers;
 using UnityEngine;
-using static UnityEngine.Object;
+using vRoles.VanillaPort.Buttons;
+using vRoles.VanillaPort.Buttons.InfectionPowers.OriginalPowers;
+using vRoles.VanillaPort.Buttons.InfectionPowers.UnUsedPowers;
 
-namespace AU3DPort.VanillaPort.Patches
+namespace vRoles.VanillaPort.Patches
 {
     [HarmonyPatch(typeof(PlayerControl),nameof(PlayerControl.RpcCompleteTask))]
     public class TaskCompletePatch
@@ -86,11 +80,6 @@ namespace AU3DPort.VanillaPort.Patches
 
                     break;
                 }
-            }
-
-            if (CustomGameModeManager.ActiveMode is TagGamemode && AmongUsClient.Instance.AmClient && AchievementsTabSingleton<AU3DTag>.Instance.freeloader.Unlocked != true && AchievementHandler.CanUnlockFreeloader != false)
-            {
-                AchievementHandler.CanUnlockFreeloader = false;
             }
         }
     }

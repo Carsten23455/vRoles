@@ -1,18 +1,12 @@
-﻿using AU3DPort.VanillaPort.Buttons;
+﻿using MiraAPI.GameModes;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using MiraAPI.GameModes;
 using UnityEngine;
-using static AU3DPort.VanillaPort.Assets.AssetManager;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using static vRoles.VanillaPort.Resources.AssetManager;
 
-namespace AU3DPort.VanillaPort.Roles.Crewmate
+namespace vRoles.VanillaPort.Roles.Crewmate
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class Vigilante : CrewmateRole, ICustomRole

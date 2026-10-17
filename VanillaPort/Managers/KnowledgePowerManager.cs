@@ -1,14 +1,7 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Buttons;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
-namespace AU3DPort.VanillaPort.Managers
+namespace vRoles.VanillaPort.Managers
 {
     public class KnowledgePowerManager
     {

@@ -1,19 +1,17 @@
-﻿using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Modifiers;
-using MiraAPI.GameModes;
+﻿using MiraAPI.GameModes;
 using MiraAPI.GameOptions;
-using MiraAPI.Modifiers;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
 
-namespace AU3DPort.VanillaPort.Roles.Infection.Crewmate
+namespace vRoles.VanillaPort.Roles.Infection.Crewmate
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class Chef : CrewmateRole, ICustomRole
     {
-        Options.Infection infection = OptionGroupSingleton<Options.Infection>.Instance;
+        vRoles.VanillaPort.Options.Infection infection = OptionGroupSingleton<vRoles.VanillaPort.Options.Infection>.Instance;
         public string RoleName => "Crewmate";
         public string RoleLongDescription => "Complete tasks and Survive the Infected";
         public string RoleDescription => RoleLongDescription;

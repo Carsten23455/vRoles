@@ -1,13 +1,8 @@
 ﻿using MiraAPI.GameOptions;
 using MiraAPI.GameOptions.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Roles.Crewmate;
+using vRoles.VanillaPort.Roles.Crewmate;
 
-namespace AU3DPort.VanillaPort.Options.RoleOptions
+namespace vRoles.VanillaPort.Options.RoleOptions
 {
     public class VigilanteSettings : AbstractOptionGroup<Vigilante>
     {
@@ -15,7 +10,8 @@ namespace AU3DPort.VanillaPort.Options.RoleOptions
 
         [ModdedNumberOption("Vigi Kill CoolDown", 10, 60, 5, MiraAPI.Utilities.MiraNumberSuffixes.Seconds)]
         public float KillCoolDown { get; set; } = 45f;
-        [ModdedToggleOption("Infinite Kills")]
-        public bool InfiniteKills { get; set; }
+
+        [ModdedNumberOption("Kill Amount", 0, 3, 1,  MiraAPI.Utilities.MiraNumberSuffixes.Seconds, null, true)]
+        public float InfiniteKills { get; set; } = 1;
     }
 }

@@ -1,24 +1,19 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Options;
+﻿using System.Collections;
+using vRoles.VanillaPort.Buttons;
 using MiraAPI.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Keybinds;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using Reactor.Utilities;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Managers;
-using AU3DPort.VanillaPort.Options.RoleOptions;
-using AU3DPort.VanillaPort.Roles.Crewmate;
-using AU3DPort.VanillaPort.Roles.Neutral;
 using UnityEngine;
+using vRoles.VanillaPort.Managers;
+using vRoles.VanillaPort.Options.RoleOptions;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Crewmate;
+using vRoles.VanillaPort.Roles.Neutral;
 
-namespace AU3DPort.VanillaPort.Buttons
+namespace vRoles.VanillaPort.Buttons
 {
     public class ScannerScan : CustomActionButton<PlayerControl>
     {

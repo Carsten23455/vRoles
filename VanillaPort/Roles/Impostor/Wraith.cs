@@ -1,14 +1,14 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AmongUs.GameOptions;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using MiraAPI;
+﻿using AmongUs.GameOptions;
+using vRoles.VanillaPort.Roles.Impostor;
 using MiraAPI.GameModes;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Roles.Impostor
+namespace vRoles.VanillaPort.Roles.Impostor
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class Wraith : ImpostorRole, ICustomRole
@@ -37,7 +37,6 @@ namespace AU3DPort.VanillaPort.Roles.Impostor
             MaxRoleCount = 1,
             UseVanillaKillButton = false,
             CanModifyChance = true,
-            DefaultChance = 50,
             IntroSound = AssetManager.WraithRoleReveal,
             GhostRole = GetRole(),
             Icon = AssetManager.WraithIcon,

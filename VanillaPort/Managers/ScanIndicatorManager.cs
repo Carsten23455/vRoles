@@ -1,9 +1,8 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using System.Collections.Generic;
-using AU3DPort.VanillaPort.Buttons;
+﻿using vRoles.VanillaPort.Buttons;
 using UnityEngine;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Managers
+namespace vRoles.VanillaPort.Managers
 {
     public static class ScanIndicatorManager
     {

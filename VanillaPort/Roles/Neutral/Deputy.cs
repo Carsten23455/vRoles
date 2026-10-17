@@ -1,13 +1,4 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using MiraAPI.Events;
-using MiraAPI.Events.Vanilla.Meeting.Voting;
-using MiraAPI.Roles;
-using MiraAPI.Utilities;
-using Reactor.Networking;
-using Reactor.Networking.Attributes;
-using UnityEngine;
-
-namespace AU3DPort.VanillaPort.Roles.Neutral
+﻿namespace vRoles.VanillaPort.Roles.Neutral
 {
     //TODO: Decide if i should keep or scrap this
     /*

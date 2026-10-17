@@ -1,15 +1,12 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Modifiers;
-using MiraAPI.GameModes;
-using MiraAPI.GameOptions;
-using MiraAPI.Modifiers;
+﻿using MiraAPI.GameModes;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Roles.Infection.Impostor
+namespace vRoles.VanillaPort.Roles.Infection.Impostor
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class Infected : ImpostorRole, ICustomRole

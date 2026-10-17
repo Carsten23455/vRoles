@@ -1,17 +1,8 @@
-﻿using AU3DPort.VanillaPort.Modifiers;
-using AU3DPort.VanillaPort.Roles;
-using MiraAPI.GameEnd;
-using MiraAPI.Modifiers;
-using MiraAPI.Roles;
+﻿using MiraAPI.GameEnd;
 using MiraAPI.Utilities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-namespace AU3DPort.VanillaPort.Events
+namespace vRoles.VanillaPort.Events
 {
     public class AllPlayersInfectedGameOver : CustomGameOver
     {

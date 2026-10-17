@@ -1,31 +1,20 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Events;
-using AU3DPort.VanillaPort.Roles;
-using AmongUs.GameOptions;
-using AU3DPort.VanillaPort.Modifiers;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Roles.Impostor;
-using MiraAPI.GameEnd;
+﻿using AmongUs.GameOptions;
+using vRoles.VanillaPort.Options;
 using MiraAPI.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Keybinds;
 using MiraAPI.Modifiers;
-using MiraAPI.Networking;
 using MiraAPI.Roles;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using UnityEngine;
-using AchievementsAPI.API;
-using AU3DPort.VanillaPort.Achievements;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Modifiers.OGInfection;
-using AU3DPort.VanillaPort.Networking;
-using AU3DPort.VanillaPort.Roles.Infection.Impostor;
-using MiraAPI.GameModes;
-using static AU3DPort.VanillaPort.Networking.RpcManager;
-using Object = UnityEngine.Object;
+using vRoles.VanillaPort.Modifiers;
+using vRoles.VanillaPort.Modifiers.OGInfection;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Infection.Impostor;
+using static vRoles.VanillaPort.Networking.RpcManager;
 
-namespace AU3DPort.VanillaPort.Buttons
+namespace vRoles.VanillaPort.Buttons
 {
     public class Infect : CustomActionButton<PlayerControl>
     {
@@ -42,7 +31,7 @@ namespace AU3DPort.VanillaPort.Buttons
             if (Target.Data.Role is Infected) return;
             if (Target.ProtectedByGa())
             {
-                Target.ShowFailedMurder();
+               Target.ShowFailedMurder();
                 return;
             }
 
@@ -63,17 +52,6 @@ namespace AU3DPort.VanillaPort.Buttons
 
                 SetRoleRpc(Target, roleType, true);
                 Target.RpcAddModifier<ZomburritoModifier>();
-            }
-
-            if (!AchievementsTabSingleton<AU3DTag>.Instance.Tastey.Unlocked)
-            {
-                AchievementsTabSingleton<AU3DTag>.Instance.Tastey.Unlock();
-            }
-            else
-            {
-                AchievementsTabSingleton<AU3DTag>.Instance.Infectious.Increment(1);
-                AchievementsTabSingleton<AU3DTag>.Instance.Spoiled.Increment(1);
-                AchievementsTabSingleton<AU3DTag>.Instance.Contaminated.Increment(1);
             }
         }
 

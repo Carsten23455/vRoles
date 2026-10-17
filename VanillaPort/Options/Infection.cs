@@ -1,15 +1,8 @@
-﻿using AU3DPort.VanillaPort.Roles;
-using MiraAPI.GameOptions;
+﻿using MiraAPI.GameOptions;
 using MiraAPI.GameOptions.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using Rewired.Data.Mapping;
+using vRoles.VanillaPort.Gamemodes.Tag;
 
-namespace AU3DPort.VanillaPort.Options
+namespace vRoles.VanillaPort.Options
 {
     public class Infection : AbstractOptionGroup<TagGamemode>
     {

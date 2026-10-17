@@ -1,17 +1,10 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Roles.Crewmate;
-using MiraAPI.Hud;
+﻿using MiraAPI.Hud;
 using MiraAPI.Keybinds;
 using MiraAPI.Utilities.Assets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Buttons.InfectionPowers.UnUsedPowers
+namespace vRoles.VanillaPort.Buttons.InfectionPowers.UnUsedPowers
 {
     public class LightsOut : CustomActionButton
     {

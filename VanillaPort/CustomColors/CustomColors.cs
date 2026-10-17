@@ -1,12 +1,7 @@
 ﻿using MiraAPI.Colors;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-namespace AU3DPort.VanillaPort.CustomColors
+namespace vRoles.VanillaPort.CustomColors
 {
     [RegisterCustomColors]
     public static class CustomColors

@@ -1,18 +1,12 @@
-﻿using AmongUs.GameOptions;
-using AU3DPort.VanillaPort.Assets;
+﻿using MiraAPI.GameModes;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using MiraAPI.GameModes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using vRoles.VanillaPort.Resources;
 
-namespace AU3DPort.VanillaPort.Roles.Impostor
+namespace vRoles.VanillaPort.Roles.Impostor
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class WraithGhostRole : ImpostorGhostRole, ICustomRole

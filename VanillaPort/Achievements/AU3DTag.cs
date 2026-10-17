@@ -1,4 +1,5 @@
-﻿using AchievementsAPI.API;
+﻿/*
+using AchievementsAPI.API;
 using AU3DPort.VanillaPort.Assets;
 using System;
 using System.Collections.Generic;
@@ -31,3 +32,5 @@ namespace AU3DPort.VanillaPort.Achievements
         public BaseAchievement Clutched { get; set; } = new BaseAchievement("Clutched", "win as the last crewmate in tag", "AU3DPort.VanillaPort.Assets.Sprites.Buttons.InfectIcon.png", 10);
     }
 }
+
+*/

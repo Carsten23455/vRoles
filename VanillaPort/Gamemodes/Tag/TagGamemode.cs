@@ -1,16 +1,5 @@
-﻿using System.Reflection.Metadata.Ecma335;
-using AmongUs.GameOptions;
-using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Events;
-using AU3DPort.VanillaPort.Modifiers;
-using AU3DPort.VanillaPort.Modifiers.OGInfection;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Roles.Crewmate;
-using AU3DPort.VanillaPort.Roles.Impostor;
-using AU3DPort.VanillaPort.Roles.Infection.Crewmate;
-using AU3DPort.VanillaPort.Roles.Infection.Impostor;
-using BepInEx.Logging;
-using HarmonyLib;
+﻿using AmongUs.GameOptions;
+using vRoles.VanillaPort.Options;
 using InnerNet;
 using MiraAPI.Events;
 using MiraAPI.Events.Vanilla.Gameplay;
@@ -18,14 +7,18 @@ using MiraAPI.GameEnd;
 using MiraAPI.GameModes;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
-using MiraAPI.Networking;
 using MiraAPI.Roles;
 using MiraAPI.Utilities.Assets;
 using Reactor.Utilities;
-using Sentry.Unity;
 using UnityEngine;
+using vRoles.VanillaPort.Events;
+using vRoles.VanillaPort.Modifiers;
+using vRoles.VanillaPort.Modifiers.OGInfection;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Infection.Crewmate;
+using vRoles.VanillaPort.Roles.Infection.Impostor;
 
-namespace AU3DPort.VanillaPort.Gamemodes.Tag;
+namespace vRoles.VanillaPort.Gamemodes.Tag;
 
 public class TagGamemode : AbstractGameMode
 {

@@ -1,7 +1,7 @@
 ﻿using MiraAPI.Modifiers;
 using MiraAPI.Modifiers.Types;
 
-namespace AU3DPort.VanillaPort.Modifiers.OGInfection
+namespace vRoles.VanillaPort.Modifiers.OGInfection
 {
     public class ZomburritoModifier : GameModifier
     {

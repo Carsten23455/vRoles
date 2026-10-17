@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Managers;
+using vRoles.VanillaPort.Managers;
 
 namespace AU3DPort.VanillaPort.Patches
 {

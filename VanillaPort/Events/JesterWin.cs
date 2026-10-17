@@ -1,14 +1,10 @@
 ﻿using MiraAPI.GameEnd;
 using MiraAPI.Utilities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Roles.Neutral;
 using UnityEngine;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Neutral;
 
-namespace AU3DPort.VanillaPort.Events
+namespace vRoles.VanillaPort.Events
 {
     public class JesterWin : CustomGameOver
     {
@@ -22,11 +18,11 @@ namespace AU3DPort.VanillaPort.Events
             endGameManager.WinText.text = $"Jester Wins!";
             endGameManager.WinText.color = Color.magenta;
             endGameManager.BackgroundBar.material.SetColor(ShaderID.Color, Color.magenta);
-            endGameManager.ImpostorStinger = Assets.AssetManager.VigiIntro.LoadAsset();
+            endGameManager.ImpostorStinger = AssetManager.VigiIntro.LoadAsset();
         }
         public override bool BeforeEndGameSetup(EndGameManager endGameManager)
         {
-            endGameManager.ImpostorStinger = Assets.AssetManager.VigiIntro.LoadAsset();
+            endGameManager.ImpostorStinger = AssetManager.VigiIntro.LoadAsset();
             return true;
         }
     }

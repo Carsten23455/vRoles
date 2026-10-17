@@ -1,22 +1,13 @@
-﻿using AU3DPort.VanillaPort.Modifiers;
-using AU3DPort.VanillaPort.Assets;
-using AmongUs.GameOptions;
+﻿using AmongUs.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Keybinds;
-using MiraAPI.Modifiers;
 using MiraAPI.Roles;
 using MiraAPI.Utilities.Assets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Roles.Crewmate;
-using AU3DPort.VanillaPort.Roles.Infection.Crewmate;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Infection.Crewmate;
 
-namespace AU3DPort.VanillaPort.Buttons.InfectionPowers.OriginalPowers
+namespace vRoles.VanillaPort.Buttons.InfectionPowers.OriginalPowers
 {
     public class Vanish : CustomActionButton
     {

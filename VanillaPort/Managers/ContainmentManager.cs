@@ -1,14 +1,6 @@
-﻿using MiraAPI.GameOptions;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Options;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace AU3DPort.VanillaPort.Managers
+namespace vRoles.VanillaPort.Managers
 {
     public class ContainmentManager
     {

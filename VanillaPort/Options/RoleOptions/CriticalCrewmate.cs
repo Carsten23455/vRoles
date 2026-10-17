@@ -1,13 +1,8 @@
 ﻿using MiraAPI.GameOptions;
 using MiraAPI.GameOptions.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Roles.Crewmate;
+using vRoles.VanillaPort.Roles.Crewmate;
 
-namespace AU3DPort.VanillaPort.Options.RoleOptions
+namespace vRoles.VanillaPort.Options.RoleOptions
 {
     public class CriticalCrewmateOption : AbstractOptionGroup<CriticalCrewmate>
     {

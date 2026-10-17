@@ -1,16 +1,7 @@
-﻿using AU3DPort.VanillaPort.Events;
-using AU3DPort.VanillaPort.Roles.Impostor;
-using AmongUs.GameOptions;
-using MiraAPI.GameEnd;
-using MiraAPI.Modifiers;
-using MiraAPI.Modifiers.Types;
-using MiraAPI.Roles;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using UnityEngine;
-using static AU3DPort.VanillaPort.Networking.RpcManager;
+﻿using MiraAPI.Modifiers.Types;
+using static vRoles.VanillaPort.Networking.RpcManager;
 
-namespace AU3DPort.VanillaPort.Modifiers
+namespace vRoles.VanillaPort.Modifiers
 {
     public class InfectedModifier : GameModifier
     {

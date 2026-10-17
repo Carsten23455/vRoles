@@ -1,19 +1,11 @@
-﻿using AU3DPort.VanillaPort.Roles.Impostor;
-using AmongUs.GameOptions;
-using MiraAPI.GameEnd;
-using MiraAPI.Networking;
+﻿using MiraAPI.GameEnd;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Events;
 using UnityEngine;
+using vRoles.VanillaPort.Events;
 
-namespace AU3DPort.VanillaPort.Roles.Neutral
+namespace vRoles.VanillaPort.Roles.Neutral
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class Jester : CrewmateRole, ICustomRole

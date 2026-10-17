@@ -1,18 +1,13 @@
-﻿using MiraAPI.GameOptions;
+﻿using vRoles.VanillaPort.Options.RoleOptions;
+using MiraAPI.GameModes;
+using MiraAPI.GameOptions;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Options.RoleOptions;
-using MiraAPI.GameModes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
 
-namespace AU3DPort.VanillaPort.Roles.Crewmate
+namespace vRoles.VanillaPort.Roles.Crewmate
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class DoubleAgent : CrewmateRole, ICustomRole

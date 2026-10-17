@@ -1,14 +1,11 @@
-﻿using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Modifiers;
-using MiraAPI.GameModes;
-using MiraAPI.GameOptions;
-using MiraAPI.Modifiers;
+﻿using MiraAPI.GameModes;
 using MiraAPI.Roles;
 using Reactor.Networking;
 using Reactor.Networking.Attributes;
 using UnityEngine;
+using vRoles.VanillaPort.Gamemodes.Tag;
 
-namespace AU3DPort.VanillaPort.Roles.Infection.Crewmate
+namespace vRoles.VanillaPort.Roles.Infection.Crewmate
 {
     [ReactorModFlags(ModFlags.RequireOnAllClients)]
     public class CrewmateTag : CrewmateRole, ICustomRole

@@ -1,17 +1,16 @@
-﻿using AU3DPort.VanillaPort.Assets;
-using AU3DPort.VanillaPort.Gamemodes.Tag;
-using AU3DPort.VanillaPort.Options;
-using AU3DPort.VanillaPort.Roles.Infection.Crewmate;
-using AU3DPort.VanillaPort.Utils;
+﻿using vRoles.VanillaPort.Options;
 using MiraAPI.GameModes;
 using MiraAPI.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Keybinds;
 using MiraAPI.Utilities.Assets;
 using UnityEngine;
-using static AU3DPort.VanillaPort.Networking.RpcManager;
+using vRoles.VanillaPort.Gamemodes.Tag;
+using vRoles.VanillaPort.Resources;
+using vRoles.VanillaPort.Roles.Infection.Crewmate;
+using vRoles.VanillaPort.Utils;
 
-namespace AU3DPort.VanillaPort.Buttons.InfectionPowers.OriginalPowers
+namespace vRoles.VanillaPort.Buttons.InfectionPowers.OriginalPowers
 {
     public class VentAbility : CustomActionButton<Vent>
     {

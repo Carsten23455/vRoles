@@ -1,4 +1,4 @@
-﻿namespace AU3DPort.VanillaPort.Networking;
+﻿namespace vRoles.VanillaPort.Networking;
 
 public enum RPCs
 {
